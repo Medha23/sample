@@ -6,7 +6,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.example.demo.entity.Car;
 import com.example.demo.entity.Driver;
-import com.example.demo.entity.Payment;
+
 import com.example.demo.entity.Users;
 
 @Configuration
@@ -28,10 +28,7 @@ public class WebConfig {
 	public Driver driver() {
 		return new Driver();
 	}
-	@Bean
-	public Payment payment() {
-		return new Payment();
-	}
+	
 	
 	@Bean
 	public Users users() {

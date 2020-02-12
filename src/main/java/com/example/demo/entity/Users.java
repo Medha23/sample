@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 
@@ -24,7 +25,7 @@ public class Users {
 	private String userRole;
 	
 	
-	
+	  @OneToMany
 	  @PrimaryKeyJoinColumn(name = "car_id", referencedColumnName = "car_model")
 	  private List carList;
 
