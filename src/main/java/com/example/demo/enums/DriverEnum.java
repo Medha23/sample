@@ -1,6 +1,6 @@
 package com.example.demo.enums;
 
-public enum Driver {
+public enum DriverEnum {
 	WITHDRIVER,
 	WITHOUTDRIVER
 

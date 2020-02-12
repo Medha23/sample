@@ -1,17 +1,23 @@
 package com.example.demo.entity;
 
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
+import com.example.demo.enums.DriverEnum;
+
+
 
 @Entity
 @Table(name="driver")
 public class Driver {
 	
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue
 	private long driverId;
 	private String driverName;
 	private long driverMobile;
@@ -21,6 +27,16 @@ public class Driver {
 	private double driverPrice;
 	
 	
+	@Enumerated(EnumType.STRING) 
+	private DriverEnum driverenum;
+	
+	
+	public DriverEnum getDriverenum() {
+		return driverenum;
+	}
+	public void setDriverenum(DriverEnum driverenum) {
+		this.driverenum = driverenum;
+	}
 	public long getDriverId() {
 		return driverId;
 	}

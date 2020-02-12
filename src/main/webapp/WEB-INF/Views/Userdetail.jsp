@@ -7,8 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-${addCar}<span>Car Added</span>
-${addUser}<span>User Added</span>
-${addDriver}<span>Driver Added</span>
+<nav class="navbar navbar-light" style="background-color: white"  />
+<ul class="navbar-nav">
+<li class="nav-item"><a href="Car"> Car Details</a></li>
+
+</ul>
+</nav>
+
 </body>
 </html>

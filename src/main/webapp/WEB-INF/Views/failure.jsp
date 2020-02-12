@@ -4,16 +4,12 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<link href="css/styles.css" rel="stylesheet">
-<title>Index</title>
+
+<title>Sai Travel Agency</title>
 </head>
 <body>
-<h1 class="centerText blue">ABC Car Rental</h1>
 
-<ul>
-<li><a href = "login">Login</a></li>
-<li><a href = "addUser">Sign Up</a></li>
-
-</ul>
+<p>Invalid Entry</p>
+<a href="addTrip">Try Again</a>
 </body>
 </html>

@@ -7,8 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
+
 ${addCar}<span>Car Added</span>
-${addUser}<span>User Added</span>
 ${addDriver}<span>Driver Added</span>
 </body>
 </html>

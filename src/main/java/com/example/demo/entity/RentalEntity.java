@@ -1,6 +1,6 @@
 package com.example.demo.entity;
 
-import java.io.Serializable;
+
 
 
 import javax.persistence.Entity;
@@ -15,11 +15,11 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "RENTAL")
-public class RentalEntity implements Serializable {
-	private static final long serialVersionUID = -5914141166470839801L;
+public class RentalEntity{
+	
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue
 	private Long id;
 	
 	
@@ -43,4 +43,16 @@ public class RentalEntity implements Serializable {
 	public void setCost(int cost) {
 		this.cost = cost;
 	}
+
+	public RentalEntity(Long id, int cost) {
+		super();
+		this.id = id;
+		this.cost = cost;
+	}
+
+	@Override
+	public String toString() {
+		return "RentalEntity [id=" + id + ", cost=" + cost + "]";
+	}
+	
 }

@@ -1,6 +1,6 @@
 package com.example.demo.entity;
 
-import java.io.Serializable;
+
 
 
 import javax.persistence.Entity;
@@ -14,11 +14,9 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "LOCATION")
-public class LocationEntity implements Serializable {
-	private static final long serialVersionUID = -3109391004768381617L;
-
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+public class LocationEntity{
+    @Id
+	@GeneratedValue
 	private Long id;
 	
 	private String address;
@@ -82,6 +80,23 @@ public class LocationEntity implements Serializable {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+
+	public LocationEntity(Long id, String address, String city, String postalCode, String phone, String email) {
+		super();
+		this.id = id;
+		this.address = address;
+		this.city = city;
+		this.postalCode = postalCode;
+		this.phone = phone;
+		this.email = email;
+	}
+
+	@Override
+	public String toString() {
+		return "LocationEntity [id=" + id + ", address=" + address + ", city=" + city + ", postalCode=" + postalCode
+				+ ", phone=" + phone + ", email=" + email + "]";
+	}
+	
 
 	
 }

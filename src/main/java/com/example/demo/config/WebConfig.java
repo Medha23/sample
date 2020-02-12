@@ -6,7 +6,9 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.example.demo.entity.Car;
 import com.example.demo.entity.Driver;
-
+import com.example.demo.entity.EmployeeEntity;
+import com.example.demo.entity.LocationEntity;
+import com.example.demo.entity.RentalEntity;
 import com.example.demo.entity.Users;
 
 @Configuration
@@ -35,6 +37,21 @@ public class WebConfig {
 		return new Users();
 	}
 	
+	@Bean 
+	public EmployeeEntity employeeEntity() {
+		return new EmployeeEntity();
+	}
 	
+	@Bean
+	public LocationEntity locationEntity() {
+		
+		return new LocationEntity();
+	}
+	
+	
+	@Bean 
+	public RentalEntity rentalEntity()  {
+		return new RentalEntity();
+	}
 	
 }

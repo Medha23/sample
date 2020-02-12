@@ -12,42 +12,22 @@ import javax.persistence.Table;
 import org.hibernate.mapping.List;
 
 @Entity
+
 @Table(name="Users")
 public class Users {
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	private long userId;
+	@GeneratedValue
+	private int  userId;
 	private String userName;
-	private long userMobile;
+	private String userMobile;
 	private String userEmail;
 	private String userAddress;
 	private String userRole;
-	
-	
-	  @OneToMany
-	  @PrimaryKeyJoinColumn(name = "car_id", referencedColumnName = "car_model")
-	  private List carList;
-
-//	@OneToMany
-//	@JoinTable(name = "car",
-//            joinColumns = {@JoinColumn(name = "car_model")})
-//	private List<Car> carList;
-
-	//private Car car;
-//	
-//	@Autowired
-//	private Driver driver;
-//	
-//	@Autowired
-//	private Payment payment;
-//	
-	
-	
-	public long getUserId() {
+	public int getUserId() {
 		return userId;
 	}
-	public void setUserId(long userId) {
+	public void setUserId(int userId) {
 		this.userId = userId;
 	}
 	public String getUserName() {
@@ -56,10 +36,10 @@ public class Users {
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
-	public long getUserMobile() {
+	public String getUserMobile() {
 		return userMobile;
 	}
-	public void setUserMobile(long userMobile) {
+	public void setUserMobile(String userMobile) {
 		this.userMobile = userMobile;
 	}
 	public String getUserEmail() {
@@ -80,12 +60,20 @@ public class Users {
 	public void setUserRole(String userRole) {
 		this.userRole = userRole;
 	}
-	@Override
-	public String toString() {
-		return "Users [userId=" + userId + ", userName=" + userName + ", userMobile=" + userMobile + ", userEmail="
-				+ userEmail + ", userAddress=" + userAddress + ", userRole=" + userRole + "]";
+	public Users() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
-	
-	
+	public Users(int userId, String userName, String userMobile, String userEmail, String userAddress,
+			String userRole) {
+		super();
+		this.userId = userId;
+		this.userName = userName;
+		this.userMobile = userMobile;
+		this.userEmail = userEmail;
+		this.userAddress = userAddress;
+		this.userRole = userRole;
+	}
+
 	
 }
