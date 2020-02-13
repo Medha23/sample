@@ -18,16 +18,16 @@ public class Users {
 
 	@Id
 	@GeneratedValue
-	private int  userId;
+	private long  userId;
 	private String userName;
 	private String userMobile;
 	private String userEmail;
 	private String userAddress;
 	private String userRole;
-	public int getUserId() {
+	public long getUserId() {
 		return userId;
 	}
-	public void setUserId(int userId) {
+	public void setUserId(long userId) {
 		this.userId = userId;
 	}
 	public String getUserName() {
@@ -64,7 +64,7 @@ public class Users {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Users(int userId, String userName, String userMobile, String userEmail, String userAddress,
+	public Users(long userId, String userName, String userMobile, String userEmail, String userAddress,
 			String userRole) {
 		super();
 		this.userId = userId;

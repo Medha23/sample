@@ -8,12 +8,13 @@
 <title>Index</title>
 </head>
 <body>
-<h1 class="centerText blue">ABC Car Rental</h1>
 
-<ul>
-<li><a href = "login">Login</a></li>
-<li><a href = "addUser">Sign Up</a></li>
 
-</ul>
+<h1 class="centerText white">${mainHeading}</h1>
+<jsp:include page="menu.jsp"/>
+
+
+
+
 </body>
 </html>

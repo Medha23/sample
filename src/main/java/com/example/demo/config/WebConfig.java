@@ -8,6 +8,7 @@ import com.example.demo.entity.Car;
 import com.example.demo.entity.Driver;
 import com.example.demo.entity.EmployeeEntity;
 import com.example.demo.entity.LocationEntity;
+import com.example.demo.entity.Login;
 import com.example.demo.entity.RentalEntity;
 import com.example.demo.entity.Users;
 
@@ -52,6 +53,11 @@ public class WebConfig {
 	@Bean 
 	public RentalEntity rentalEntity()  {
 		return new RentalEntity();
+	}
+	
+	@Bean 
+	public Login login()  {
+		return new Login();
 	}
 	
 }

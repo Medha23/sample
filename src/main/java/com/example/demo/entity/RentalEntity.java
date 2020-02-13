@@ -20,7 +20,7 @@ public class RentalEntity{
 
 	@Id
 	@GeneratedValue
-	private Long id;
+	private long id;
 	
 	
 	private int cost;
@@ -28,11 +28,11 @@ public class RentalEntity{
 	public RentalEntity() {
 	}
 
-	public Long getId() {
+	public long getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 
@@ -44,7 +44,7 @@ public class RentalEntity{
 		this.cost = cost;
 	}
 
-	public RentalEntity(Long id, int cost) {
+	public RentalEntity(long id, int cost) {
 		super();
 		this.id = id;
 		this.cost = cost;

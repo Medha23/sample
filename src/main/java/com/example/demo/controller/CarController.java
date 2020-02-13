@@ -3,6 +3,8 @@ package com.example.demo.controller;
 
 import javax.validation.Valid;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -58,19 +60,14 @@ public class CarController {
 		return "success";
 		
 	}
-//	@GetMapping(path="/viewTrip")
+	
+//	@GetMapping(path="/payment")
 //	public String findAll(Model model) {
-//		List<Map<String,Object>> tourList=dao.findAll();
-//		model.addAttribute("tourList", tourList);
-//		System.out.println(tourList);
-//		return "showTours";
+////		List<Car> carList=carrepo.findAll();
+////		model.addAttribute("carList", carList);
+////		System.out.println(carList);
+//		return "payment";
 //	}
 	
-	
-//	public String findAll(Model model) {
-//		List<Car> carList=carrepo.findAll(car);
-//		model.addAttribute("carList",carList);
-//		return "Car";
-//		
-//	}
+
 }

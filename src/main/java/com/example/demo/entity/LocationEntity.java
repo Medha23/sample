@@ -17,7 +17,7 @@ import javax.persistence.Table;
 public class LocationEntity{
     @Id
 	@GeneratedValue
-	private Long id;
+	private long id;
 	
 	private String address;
 	
@@ -33,11 +33,11 @@ public class LocationEntity{
 	public LocationEntity() {
 	}
 
-	public Long getId() {
+	public long getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 
@@ -81,7 +81,7 @@ public class LocationEntity{
 		this.email = email;
 	}
 
-	public LocationEntity(Long id, String address, String city, String postalCode, String phone, String email) {
+	public LocationEntity(long id, String address, String city, String postalCode, String phone, String email) {
 		super();
 		this.id = id;
 		this.address = address;

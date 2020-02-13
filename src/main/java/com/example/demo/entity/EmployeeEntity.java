@@ -20,7 +20,7 @@ public class EmployeeEntity {
 
 	@Id
 	@GeneratedValue
-	private Long emp_id;
+	private long emp_id;
 	
 	private String name;
 	
@@ -29,11 +29,11 @@ public class EmployeeEntity {
 	public EmployeeEntity() {
 	}
 
-	public Long getEmp_id() {
+	public long getEmp_id() {
 		return emp_id;
 	}
 
-    public void setEmp_id(Long emp_id) {
+    public void setEmp_id(long emp_id) {
 		this.emp_id = emp_id;
 	}
 
@@ -57,7 +57,7 @@ public class EmployeeEntity {
 
 
 
-	public EmployeeEntity(Long emp_id, String name, String surname) {
+	public EmployeeEntity(long emp_id, String name, String surname) {
 		super();
 		this.emp_id = emp_id;
 		this.name = name;

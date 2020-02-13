@@ -9,16 +9,15 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class WelcomeController {
 
-	
 	@Autowired
 	private ModelAndView mdlView;
+	
 	
 	@GetMapping("/")
 	public ModelAndView init() {
 		mdlView.setViewName("index");
 		mdlView.addObject("mainHeading", "Car Rental Service");
+		
 		return mdlView;
 	}
-	
-	
 }
